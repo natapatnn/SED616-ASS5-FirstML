@@ -79,6 +79,45 @@
    ]
   },
   {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "866ba4df-669a-4bf2-bc13-79684443b757",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "DeltaGenerator()"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import streamlit as st\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "# สมมติว่าคุณมีข้อมูลในรูปแบบของ dictionary หรือ DataFrame\n",
+    "data = {\n",
+    "    \"Feature_0\": 0.03,\n",
+    "    \"Feature_1\": -0.02,\n",
+    "    \"Feature_2\": 0.00,\n",
+    "    \"Feature_3\": 0.00,\n",
+    "    \"Feature_4\": 0.00,\n",
+    "    \"Feature_5\": 0.00,\n",
+    "}\n",
+    "\n",
+    "# สร้างกราฟ\n",
+    "fig, ax = plt.subplots()\n",
+    "ax.bar(data.keys(), data.values())\n",
+    "\n",
+    "# แสดงผลกราฟใน Streamlit\n",
+    "st.pyplot(fig)"
+   ]
+  },
+  {
    "cell_type": "markdown",
    "id": "dfc19be1-f007-442c-a1d1-f18b74ed1005",
    "metadata": {},
@@ -493,7 +532,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": None,
+   "execution_count": null,
    "id": "abdedb94-129c-4e32-af3c-6645acbb801f",
    "metadata": {},
    "outputs": [],
@@ -503,7 +542,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": None,
+   "execution_count": null,
    "id": "81ad90aa-5446-48c2-9cf7-d195fcee1a34",
    "metadata": {},
    "outputs": [],
